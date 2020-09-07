@@ -1,0 +1,23 @@
+PODS:
+  - CryptoSHA256 (0.0.1)
+  - SPAlert (2.1.4)
+
+DEPENDENCIES:
+  - CryptoSHA256 (from `../`)
+  - SPAlert
+
+SPEC REPOS:
+  trunk:
+    - SPAlert
+
+EXTERNAL SOURCES:
+  CryptoSHA256:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CryptoSHA256: 73349dcac402d27624491f8ec13bb38ca9c16acb
+  SPAlert: 1a8afa1c6ac86a82ab5b2cfdf7f9a51e68cb6c0c
+
+PODFILE CHECKSUM: c8051c485843fcbf78a544897056e563d4b6be72
+
+COCOAPODS: 1.10.0.beta.2
