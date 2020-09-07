@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5FF87B25247EC15E00BC864D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF87B24247EC15E00BC864D /* AppDelegate.swift */; };
-		5FF87B27247EC15E00BC864D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF87B26247EC15E00BC864D /* SceneDelegate.swift */; };
 		5FF87B29247EC15E00BC864D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF87B28247EC15E00BC864D /* ViewController.swift */; };
 		5FF87B2C247EC15E00BC864D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF87B2A247EC15E00BC864D /* Main.storyboard */; };
 		5FF87B2E247EC16200BC864D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF87B2D247EC16200BC864D /* Assets.xcassets */; };
 		5FF87B31247EC16200BC864D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF87B2F247EC16200BC864D /* LaunchScreen.storyboard */; };
+		DFF0112292862FFD0ECD6ED8 /* Pods_sha256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4091689C069E23B97FE3C6 /* Pods_sha256.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52961CE1131E12A0A71A38C4 /* Pods-sha256.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sha256.release.xcconfig"; path = "Target Support Files/Pods-sha256/Pods-sha256.release.xcconfig"; sourceTree = "<group>"; };
+		55EA58952448B7DF67B23F5A /* Pods-sha256.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sha256.debug.xcconfig"; path = "Target Support Files/Pods-sha256/Pods-sha256.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF87B21247EC15E00BC864D /* sha256.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sha256.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF87B24247EC15E00BC864D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FF87B26247EC15E00BC864D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5FF87B28247EC15E00BC864D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FF87B2B247EC15E00BC864D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FF87B2D247EC16200BC864D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF87B30247EC16200BC864D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF87B32247EC16200BC864D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4091689C069E23B97FE3C6 /* Pods_sha256.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sha256.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF0112292862FFD0ECD6ED8 /* Pods_sha256.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A25F253F71227CE04126142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EA58952448B7DF67B23F5A /* Pods-sha256.debug.xcconfig */,
+				52961CE1131E12A0A71A38C4 /* Pods-sha256.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5FF87B18247EC15E00BC864D = {
 			isa = PBXGroup;
 			children = (
 				5FF87B23247EC15E00BC864D /* sha256 */,
 				5FF87B22247EC15E00BC864D /* Products */,
+				4A25F253F71227CE04126142 /* Pods */,
+				A0803BDCBC0C12C8AEA2EAD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				5FF87B24247EC15E00BC864D /* AppDelegate.swift */,
-				5FF87B26247EC15E00BC864D /* SceneDelegate.swift */,
 				5FF87B28247EC15E00BC864D /* ViewController.swift */,
 				5FF87B2A247EC15E00BC864D /* Main.storyboard */,
 				5FF87B2D247EC16200BC864D /* Assets.xcassets */,
@@ -67,6 +80,14 @@
 			path = sha256;
 			sourceTree = "<group>";
 		};
+		A0803BDCBC0C12C8AEA2EAD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E4091689C069E23B97FE3C6 /* Pods_sha256.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FF87B35247EC16200BC864D /* Build configuration list for PBXNativeTarget "sha256" */;
 			buildPhases = (
+				E368D1E163E706B625228927 /* [CP] Check Pods Manifest.lock */,
 				5FF87B1D247EC15E00BC864D /* Sources */,
 				5FF87B1E247EC15E00BC864D /* Frameworks */,
 				5FF87B1F247EC15E00BC864D /* Resources */,
+				892532E63A465CD86D465907 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,7 +118,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = "zouhair mouhsine";
+				ORGANIZATIONNAME = devzhr;
 				TargetAttributes = {
 					5FF87B20247EC15E00BC864D = {
 						CreatedOnToolsVersion = 11.5;
@@ -133,6 +156,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		892532E63A465CD86D465907 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sha256/Pods-sha256-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sha256/Pods-sha256-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sha256/Pods-sha256-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E368D1E163E706B625228927 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sha256-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FF87B1D247EC15E00BC864D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +205,6 @@
 			files = (
 				5FF87B29247EC15E00BC864D /* ViewController.swift in Sources */,
 				5FF87B25247EC15E00BC864D /* AppDelegate.swift in Sources */,
-				5FF87B27247EC15E00BC864D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +346,12 @@
 		};
 		5FF87B36247EC16200BC864D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EA58952448B7DF67B23F5A /* Pods-sha256.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sha256/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +365,12 @@
 		};
 		5FF87B37247EC16200BC864D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52961CE1131E12A0A71A38C4 /* Pods-sha256.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sha256/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
