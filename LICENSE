@@ -1,33 +1,21 @@
-# Swift-CryptoSHA256
+MIT License
 
-<p align="left">
-	<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/Swift_5-compatible-4BC51D.svg?style=flat" alt="Swift 5 compatible" /></a>
-	<a href="https://cocoapods.org/pods/ScrollableDatepicker"><img src="https://img.shields.io/badge/pod-2.2.0-blue.svg" alt="CocoaPods compatible" /></a>
-	<img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
-	<a href="https://raw.githubusercontent.com/maxsokolov/tablekit/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
-</p>
-Swift Crypto SHA256 
-<img src="screen1.png" width="400" height="800" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="screen2.png" width="400" height="800" />
+Copyright (c) 2020 Zouhair MOUHSINE
 
-## Getting Started
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-An [example ViewController](https://github.com/devzhr/Swift-CryptoSHA256/blob/master/Example/sha256/ViewController.swift) is included demonstrating CryptoSHA256's functionality.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-
-## Installation
-
-### CocoaPods
-
-Add the following line to your Podfile:
-
-```ruby
-pod 'CryptoSHA256'
-```
-Then run the following in the same directory as your Podfile:
-
-```ruby
-pod install
-```
-### Manual
-
-Clone the repo and drag files from `Sources` folder into your Xcode project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
