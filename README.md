@@ -22,7 +22,7 @@ An [example ViewController](https://github.com/devzhr/Swift-CryptoSHA256/blob/ma
 Add the following line to your Podfile:
 
 ```ruby
-pod 'CryptoSHA256', :git => 'https://github.com/devzhr/Swift-CryptoSHA256.git', :tag => 'v0.0.1'
+pod 'CryptoSHA256', :git => 'https://github.com/devzhr/Swift-CryptoSHA256.git', :tag => '0.0.1'
 ```
 Then run the following in the same directory as your Podfile:
 
