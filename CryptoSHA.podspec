@@ -7,5 +7,6 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "devzhr" => "zouhair.mouhsine@gmail.com" }
   spec.source       = { :git => "https://github.com/devzhr/Swift-CryptoSHA.git", :tag => "#{spec.version}" }
+  spec.swift_version = '5.3'
   spec.source_files  = "CryptoSHA/Classes", "CryptoSHA/Classes/**/*.{h,m}"
 end
