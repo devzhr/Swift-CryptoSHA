@@ -1,7 +1,7 @@
 # Swift-CryptoSHA
 ============
 
-Swift Crypto SHA256,  SHA51,2 SHA224 and SHA384
+Swift Crypto SHA256,  SHA512, SHA224 and SHA384
 
 ## Getting Started
 
@@ -15,6 +15,7 @@ An [example ViewController](https://github.com/devzhr/Swift-CryptoSHA/blob/maste
 </p>
 
 <img src="screen1.png" width="400" height="800" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="screen2.png" width="400" height="800" />
+<img src="screen3.png" width="400" height="800" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="screen4.png" width="400" height="800" />
 
 ## How do I get involved?
 
