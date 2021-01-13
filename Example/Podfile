@@ -5,7 +5,7 @@ target 'sha256' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'CryptoSHA256', :path => "../"
+  pod 'CryptoSHA', :path => "../"
 
 
   pod 'SPAlert'

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dh-WQ-bju">
-                                <rect key="frame" x="20" y="134" width="78.5" height="35"/>
+                                <rect key="frame" x="20" y="134" width="78" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9nX-EE-KYQ"/>
                                 </constraints>
@@ -41,27 +43,54 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0E-Pk-GxW">
-                                <rect key="frame" x="183.5" y="225" width="47" height="30"/>
-                                <state key="normal" title="Crypto"/>
-                                <connections>
-                                    <action selector="crypto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HK4-kd-73L"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in a password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuX-Fc-KC2">
-                                <rect key="frame" x="20" y="263" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qPU-uX-cxz">
+                                <rect key="frame" x="20" y="225" width="374" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0E-Pk-GxW">
+                                        <rect key="frame" x="0.0" y="16" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Crypto256"/>
+                                        <connections>
+                                            <action selector="crypto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HK4-kd-73L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f71-Kj-H26">
+                                        <rect key="frame" x="94" y="16" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Crypto512"/>
+                                        <connections>
+                                            <action selector="crypto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dm7-Xi-aOB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAm-ih-gZW">
+                                        <rect key="frame" x="188" y="16" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Crypto224"/>
+                                        <connections>
+                                            <action selector="crypto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4d-2w-Moj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STI-Tc-Lsi">
+                                        <rect key="frame" x="282" y="16" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Crypto384"/>
+                                        <connections>
+                                            <action selector="crypto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHA-nC-vj7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Ugm-uT-p6U"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-cn-21T">
-                                <rect key="frame" x="20" y="292" width="374" height="0.0"/>
+                                <rect key="frame" x="20" y="323.5" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-M2-4AO">
-                                <rect key="frame" x="324" y="302" width="70" height="40"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-M2-4AO">
+                                <rect key="frame" x="324" y="333.5" width="70" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="hby-8k-gIv"/>
                                     <constraint firstAttribute="height" constant="40" id="vCC-Kd-K6M"/>
@@ -72,29 +101,36 @@
                                     <action selector="Copy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQF-IJ-YR3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in a password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuX-Fc-KC2">
+                                <rect key="frame" x="20" y="295" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="N5r-NZ-hfN" firstAttribute="top" secondItem="9Dh-WQ-bju" secondAttribute="bottom" constant="8" id="0ci-Bv-Huh"/>
                             <constraint firstItem="WuX-Fc-KC2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Mr-DI-1J1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N5r-NZ-hfN" secondAttribute="trailing" constant="20" id="AWG-D9-mqP"/>
                             <constraint firstItem="9Dh-WQ-bju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ByA-zm-E6i"/>
-                            <constraint firstItem="A0E-Pk-GxW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNF-Sq-hh6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rHW-M2-4AO" secondAttribute="trailing" constant="20" id="GVA-Z7-Hnw"/>
                             <constraint firstItem="rHW-M2-4AO" firstAttribute="top" secondItem="Gag-cn-21T" secondAttribute="bottom" constant="10" id="JjR-G4-bFO"/>
                             <constraint firstItem="Kdq-EK-Se7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LDL-pD-ci2"/>
                             <constraint firstItem="Gag-cn-21T" firstAttribute="top" secondItem="WuX-Fc-KC2" secondAttribute="bottom" constant="8" id="MB4-SA-awQ"/>
+                            <constraint firstItem="WuX-Fc-KC2" firstAttribute="top" secondItem="qPU-uX-cxz" secondAttribute="bottom" constant="8" symbolic="YES" id="OQZ-8E-YwN"/>
                             <constraint firstItem="Gag-cn-21T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T1L-c5-M1s"/>
                             <constraint firstItem="Kdq-EK-Se7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VME-F1-QEa"/>
                             <constraint firstItem="N5r-NZ-hfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZdX-ud-WLJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WuX-Fc-KC2" secondAttribute="trailing" constant="20" id="bIc-6F-mXh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kdq-EK-Se7" secondAttribute="trailing" constant="20" id="dtQ-Oq-eDQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gag-cn-21T" secondAttribute="trailing" constant="20" id="i6a-0I-POt"/>
+                            <constraint firstItem="qPU-uX-cxz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lOM-It-WQP"/>
+                            <constraint firstItem="qPU-uX-cxz" firstAttribute="top" secondItem="N5r-NZ-hfN" secondAttribute="bottom" constant="8" symbolic="YES" id="oHg-EZ-D9Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qPU-uX-cxz" secondAttribute="trailing" constant="20" id="r0K-xM-nC1"/>
                             <constraint firstItem="9Dh-WQ-bju" firstAttribute="top" secondItem="Kdq-EK-Se7" secondAttribute="bottom" constant="40" id="rnK-Vm-FWZ"/>
-                            <constraint firstItem="A0E-Pk-GxW" firstAttribute="top" secondItem="N5r-NZ-hfN" secondAttribute="bottom" constant="8" id="tww-GO-d6G"/>
-                            <constraint firstItem="WuX-Fc-KC2" firstAttribute="top" secondItem="A0E-Pk-GxW" secondAttribute="bottom" constant="8" id="vnu-gL-tdn"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Password" destination="N5r-NZ-hfN" id="Uwf-iW-V5O"/>
@@ -108,4 +144,12 @@
             <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

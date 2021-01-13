@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CryptoSHA256
+import CryptoSHA
 import SPAlert
 class ViewController: UIViewController {
     
@@ -25,10 +25,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func crypto(_ sender: UIButton) {
+        
         let clearString = password.text
         if clearString != ""{
-            self.hashName = clearString!.sha256()
-            hashnameLbl.text = "HashName:"
+            switch sender.tag {
+            case 1:
+                self.hashName = clearString!.sha512()
+                hashnameLbl.text = "HashName 512:"
+            case 2:
+                self.hashName = clearString!.sha224()
+                hashnameLbl.text = "HashName 224:"
+            case 3:
+                self.hashName = clearString!.sha384()
+                hashnameLbl.text = "HashName 384:"
+            default:
+                self.hashName = clearString!.sha256()
+                hashnameLbl.text = "HashName 256:"
+            }
             sha256Lbl.text = self.hashName
             copyBnt.isHidden = false
         } else {
