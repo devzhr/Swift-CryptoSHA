@@ -39,3 +39,14 @@ pod install
 ### Manual
 
 Clone the repo and drag files from `Sources` folder into your Xcode project.
+
+
+:beer: Donate
+------
+If you want to buy me a beer, you can donate to my coin addresses below:
+#### BTC
+199nLDzwUc46FgfXvrjk2Xu8vUBHNgmthi
+#### ETH
+0xdb1dcf543af29142de5c200008289c03ad326f53
+#### LTC
+LW6zpeg6BiqfWvSb3Gg9hAcmyBpeQAGoqX
