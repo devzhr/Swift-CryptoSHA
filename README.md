@@ -29,7 +29,7 @@ You want to help, great! Go ahead and fork our repo, make your changes and send 
 Add the following line to your Podfile:
 
 ```ruby
-pod 'CryptoSHA', :git => 'https://github.com/devzhr/Swift-CryptoSHA.git', :tag => '0.0.2'
+pod 'CryptoSHA'
 ```
 Then run the following in the same directory as your Podfile:
 
